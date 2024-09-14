@@ -1,13 +1,14 @@
-import random
-def fibonacci_Generator():
-    a=0
-    b=1
-    for i in range(n):
-        yield b
-        a,b= b,a+b
-n=int(input("enter number to generate"))
-obj = fibonacci_Generator()
-for _ in range(n):
-    print(next(obj),end=" ")
-
-
+#develop  a program for tracking student grades and calculating  averages
+#allow users to input grades for different subjects 
+print(("enter no of subjects"));
+a=int(input("enter subject marks"))
+b=int(input("enter subject marks"))
+c=int(input("enter subject marks"))
+d=int(input("enter subject marks"))
+k=(a+b+c+d)/4
+if(k>90 or k<100):
+    print("A grade")
+    if(k>70 and k<90):
+         print("B grade")
+else:
+    print(" c grade ")
